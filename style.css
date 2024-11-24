@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffef9f;
+    text-align: center;
+}
+
+h1 {
+    color: #7b84f1;
+    font-family: cursive;
+    height: 2rem;
+    justify-content: center;
+    align-self: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.image {
+    height: 360px;  /* Set container size */
+    width: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    border-radius: 40%;
+    position: relative;
+    overflow: hidden;  /* Ensure the image doesn't overflow out of the container */
+}
+
+img {
+    height: 100%;  /* Fill the container */
+    width: 100%;
+    object-fit: cover;  /* Make sure the image covers the container without stretching */
+    border-radius: 40%;
+}
+
+.image:hover {
+    box-shadow: 0 0 2rem #90F1EF; /* Larger and darker shadow */
+    background-color: #383f51;  /* Change background color on hover */
+    transform: scale(1.1); /* Make it slightly larger */
+    cursor: pointer;
+}
+.hovered {
+    transform: scale(1.1); /* Zoom in effect */
+    box-shadow: 0 0 2rem #f5587f; /* Larger and darker shadow */
+}
+
+.score-Board{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    font-size: 114%;
+    margin-top: 5vmin;
+
+}
+/* .numberCmp , .numberMy{                 comma se seperarte krkr hm aaram  se 2 classes likh skte h */
+ .numberCmp { 
+    font-size: 214%;
+    color: #cb3c5f;
+}
+.numberMy{
+    font-size: 214%;
+    color: #08b44a;
+}
+.message{
+    background-color: #383f51;
+    color: #ffef9f;
+    border-radius: 2rem;
+    display:  inline-block;          /*new*/
+    padding: 1%;
+    margin-top: 2rem;
+
+
+}
